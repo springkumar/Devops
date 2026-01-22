@@ -1,10 +1,9 @@
-# Read output from DEV job
 with open("output.txt", "r") as f:
-    result = int(f.read())
+    content = f.read().strip()   # "Addition: 30"
 
-# Simple test
-if result == 30:
-    print("TEST PASSED: Addition is correct")
-else:
-    print("TEST FAILED")
-    exit(1)
+# Extract number
+result = int(content.split(":")[1].strip())
+
+# Test condition
+assert result == 30
+print("Test passed successfully")
