@@ -1,4 +1,4 @@
-with open("output.txt", "r") as f:
+with open("/var/lib/jenkins/workspace/Auto_Test_Project/output.txt", "r") as f:
     content = f.read().strip()   # "Addition: 30"
 
 # Extract number
