@@ -1,6 +1,9 @@
 a = 10
 b = 20
 result = a + b
-with open("output.txt", "w") as f:
-    f.write(f"Addition: {result}\n")
+
 print("Addition:", result)
+
+# Save output for test program
+with open("output.txt", "w") as f:
+    f.write(str(result))
